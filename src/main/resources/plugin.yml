@@ -1,0 +1,27 @@
+name: Mcssenger
+description: Pin messages for all players to see on join!
+version: '1.0'
+
+main: github.regularrabbit05.mcssenger.Plugin
+api-version: '1.18'
+load: POSTWORLD
+
+authors: [ RegularRabbit05 ]
+website: https://regdev.me
+
+commands:
+  pin:
+    description: Pin message
+    usage: /<command> <the text message>
+    permission: mcssenger.pin
+  pinrm:
+    description: Unpin message
+    usage: /<command> <id>
+    permission: mcssenger.pinrm
+permissions:
+  mcssenger.pin:
+    default: true
+    description: Allows pinning of messages
+  mcssenger.pinrm:
+    default: true
+    description: Allows unpinning of messages
